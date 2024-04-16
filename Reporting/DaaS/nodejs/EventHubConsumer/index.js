@@ -2,11 +2,11 @@ const { EventHubConsumerClient, earliestEventPosition  } = require("@azure/event
 const { ContainerClient } = require("@azure/storage-blob");    
 const { BlobCheckpointStore } = require("@azure/eventhubs-checkpointstore-blob");
 
-const connectionString = "EVENT HUBS NAMESPACE CONNECTION STRING";    
-const eventHubName = "EVENT HUB NAME";
+const connectionString = "<EventHubConnectionStringHere>";    
+const eventHubName = "<EventHubNameHere>";
 const consumerGroup = "$Default"; // name of the default consumer group
-const storageConnectionString = "STORAGE CONNECTION STRING";
-const containerName = "STORAGE CONTAINER NAME";
+const storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=<AccountNameHere>;AccountKey=<AccountKeyHere>;EndpointSuffix=core.windows.net";
+const containerName = "<BlobContainerNameHere>";
 
 async function main() {
   // Create a blob container client and a blob checkpoint store using the client.
