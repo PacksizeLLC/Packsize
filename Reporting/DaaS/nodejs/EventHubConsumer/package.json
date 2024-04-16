@@ -1,0 +1,16 @@
+{
+  "name": "eventhubconsumer",
+  "version": "1.0.0",
+  "description": "Sample Packsize Reporting Data As A Service (DaaS) Event Consumer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/eventhubs-checkpointstore-blob": "^1.0.1",
+    "@azure/storage-blob": "^12.17.0"
+  }
+}

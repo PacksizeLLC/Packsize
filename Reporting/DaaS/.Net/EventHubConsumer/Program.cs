@@ -8,8 +8,8 @@ namespace EventHubConsumer;
 
 class Program
 {
-    private const string ConnectionString = "<InsertAzureEventHubConnectionStingHere>";
-    private const string BlobConnectionString = "<InsertAzureBlobStorageConnectionStringHere>";
+    private const string ConnectionString = "Endpoint=sb://evhns-perfdata-prod.servicebus.windows.net/;SharedAccessKeyName=ListenPolicy;SharedAccessKey=h8/LOLSrUyOdCU+piHR2sW6W/x9VtuudVewFhWqvkPs=;EntityPath=evh-externalrouting";
+    private const string BlobConnectionString = "https://dlspsperfdataprod.blob.core.windows.net/checkpoints?sp=rawlo&st=2024-03-29T23:20:18Z&se=2024-04-30T07:20:18Z&spr=https&sv=2022-11-02&sr=c&sig=MWLybfOjJz6pVEfZBic3B3fR8zc0B16JCYySSqba8rc%3D";
     private static long messageCounter;
     private static long offset;
     private static long sequence;

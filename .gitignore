@@ -8,3 +8,5 @@
 
 # Visual Studio files
 .vs/
+
+node_modules/
